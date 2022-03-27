@@ -1,14 +1,5 @@
 # Towards a Catalog of Composite Refactoring
 
-Scripts to detect composite refactoring are publicly available at: 
-
-
-## Dataset
-
-Oracle study:
-
-Wild study:
-
 
 ## Catalog of Composite Refactoring
 
@@ -37,6 +28,11 @@ Wild study:
 
 <img src="img/fig_push_down_decomposition.svg" width="450">
 
+### Dataset & Scripts
+
+* Scripts to detect composite refactorings are publicly available at:  [detector](detector).
+
+* Datasets: [oracle study](results/oracle) and [wild study](results/wild).
 
 ### Manuscript
 
