@@ -56,7 +56,7 @@ This folder contains a random sample from the oracle study. We manually inspecte
 
 * `linkedin/rest.li`, [composite #0](../oracle/linkedin/rest.li/results/decomposition_inline_method/view/subgraph_atomic_0.md), 2 operations
 
-* `real-logic/Aeron`, [composite #3](../oracle/real-logic/Aeron/results/decomposition_inline_method/view/subgraph_atomic_3.md), 2 operations
+* `real-logic/Aeron`, [composite #3](../oracle/real-logic/Aeron/results/decomposition_inline_method/view/subgraph_atomic_3.md), 3 operations
 
 * `google/guava`, [composite #0](../oracle/google/guava/results/decomposition_inline_method/view/subgraph_atomic_0.md), 2 operations
 
