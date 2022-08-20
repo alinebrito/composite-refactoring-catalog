@@ -24,9 +24,11 @@ def detect_composite(project):
     detector_decomposition.inline_method(project)
     detector_decomposition.push_down_method(project)
     detector_decomposition.move_method(project)
+    detector_decomposition.push_down_attribute(project)
     detector_composition = Composition()
     detector_composition.pull_up_method(project)
     detector_composition.extract_method(project)
+    detector_composition.pull_up_attribute(project)
     pass
 
 def report(project):

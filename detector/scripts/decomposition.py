@@ -95,4 +95,14 @@ class Decomposition:
             ref['target'] = package_after.replace(' ', '')
             ref['refactoringType'] = '{} TYPE'.format(ref.get('refactoringType'))
         self.plot(project, refactorings, path, 'Package Decomposition') 
-        pass 
+        pass
+
+    def push_down_attribute(self, project):
+        path = 'output/{}/results/decomposition_push_down_attribute'.format(project)
+        file_name = '{}/selected_refactorings.csv'.format(path)
+        refactorings = self.init(path, project, ['AttributeDeclaration'], ["PUSH_DOWN"], file_name)
+        for index, ref in enumerate(refactorings):
+            ref['source'] = ref.get('entityBeforeFullName').replace(' ', '')
+            ref['target'] = ref.get('entityAfterFullName').replace(' ', '')
+        self.plot(project, refactorings, path, 'Push Down Attribute')
+    pass
