@@ -39,13 +39,13 @@ class Graph:
         fillcolor = 'grey74'
         label = 'm'
         label = 'c' if category in ['Class Decomposition'] else label
-        label = 'a' if category in ['Push Down Attribute', 'Pull Up Attribute'] else label
+        label = 'a' if category in ['Push Down Field', 'Pull Up Field'] else label
         return {'label': label, 'fillcolor': fillcolor }
 
     def get_target_config(self, category):
         fillcolor = 'gray92'
         label = 'm'
-        label = 'a' if category in ['Push Down Attribute', 'Pull Up Attribute'] else label
+        label = 'a' if category in ['Push Down Field', 'Pull Up Field'] else label
         return {'label': label, 'fillcolor': fillcolor }
 
     def plot(self, subgraphs, path, category):

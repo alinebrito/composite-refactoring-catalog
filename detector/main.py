@@ -20,15 +20,15 @@ def run_refdiff(project):
 
 def detect_composite(project):
     detector_decomposition = Decomposition()
-    detector_decomposition.extract_method(project)
-    detector_decomposition.inline_method(project)
-    detector_decomposition.push_down_method(project)
-    detector_decomposition.move_method(project)
-    detector_decomposition.push_down_attribute(project)
+    # detector_decomposition.extract_method(project)
+    # detector_decomposition.inline_method(project)
+    # detector_decomposition.push_down_method(project)
+    # detector_decomposition.move_method(project)
+    detector_decomposition.push_down_field(project)
     detector_composition = Composition()
-    detector_composition.pull_up_method(project)
-    detector_composition.extract_method(project)
-    detector_composition.pull_up_attribute(project)
+    # detector_composition.pull_up_method(project)
+    # detector_composition.extract_method(project)
+    detector_composition.pull_up_field(project)
     pass
 
 def report(project):
