@@ -65,5 +65,16 @@ This folder contains a random sample from the oracle study. We manually inspecte
 
 ## Composite Pull Up Field
 
+* `HubSpot/Singularity`, [composite #0](../oracle/HubSpot/Singularity/results/composition_pull_up_field/view/subgraph_atomic_0.md), 2 operations
 
-## Composite Push Down Method
+* `crate/crate`, [composite #0](../oracle/crate/crate/results/composition_pull_up_field/view/subgraph_atomic_0.md), 3 operations
+
+* `apache/drill`, [composite #0](../oracle/apache/drill/results/composition_pull_up_field/view/subgraph_atomic_0.md), 3 operations
+
+* `Activiti/Activiti`, [composite #1](../oracle/Activiti/Activiti/results/composition_pull_up_field/view/subgraph_atomic_1.md), 2 operations
+
+## Composite Push Down Field
+
+* `BuildCraft/BuildCraft`, [composite #0](../oracle/BuildCraft/BuildCraft/results/decomposition_push_down_field/view/subgraph_atomic_1.md), 2 operations
+
+* `BuildCraft/BuildCraft`, [composite #0](../oracle/BuildCraft/BuildCraft/results/decomposition_push_down_field/view/subgraph_atomic_1.md), 2 operations
