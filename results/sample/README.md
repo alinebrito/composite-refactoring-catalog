@@ -35,7 +35,7 @@ This folder contains a random sample from the oracle study. We manually inspecte
 * `eclipse/vert.x`, [composite #0](../oracle/eclipse/vert.x/results/composition_extract_method/view/subgraph_atomic_0.md), 2 operations
 
 
-## Pull Up Method
+## Composite Pull Up Method
 
 * `JetBrains/intellij-community`, [composite #0](../oracle/JetBrains/intellij-community/results/composition_pull_up_method/view/subgraph_atomic_0.md), 2 operations
 
@@ -45,14 +45,14 @@ This folder contains a random sample from the oracle study. We manually inspecte
 
 * `apache/zookeeper`, [composite #0](../oracle/apache/zookeeper/results/composition_pull_up_method/view/subgraph_atomic_0.md), 2 operations
 
-## Push Down Method
+## Composite Push Down Method
 
 * `Alluxio/alluxio`, [composite #0](../oracle/Alluxio/alluxio/results/decomposition_push_down_method/view/subgraph_atomic_0.md), 2 operations
 
 * `BuildCraft/BuildCraft`, [composite #0](../oracle/BuildCraft/BuildCraft/results/decomposition_push_down_method/view/subgraph_atomic_0.md), 2 operations
 
 
-## Inline Method
+## Composite Inline Method
 
 * `linkedin/rest.li`, [composite #0](../oracle/linkedin/rest.li/results/decomposition_inline_method/view/subgraph_atomic_0.md), 2 operations
 
@@ -63,3 +63,7 @@ This folder contains a random sample from the oracle study. We manually inspecte
 * `neo4j/neo4j`, [composite #2](../oracle/neo4j/neo4j/results/decomposition_inline_method/view/subgraph_atomic_2.md), 2 operations
 
 
+## Composite Pull Up Field
+
+
+## Composite Push Down Method

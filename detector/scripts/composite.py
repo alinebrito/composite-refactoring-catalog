@@ -42,4 +42,16 @@ class Composite:
             'level': []
         }
 
+        composites['composition_pull_up_field'] = {
+            'name': 'Pull Up Field',
+            'operations': [],
+            'level': []
+        }
+
+        composites['decomposition_push_down_field'] = {
+            'name': 'Push Down Field',
+            'operations': [],
+            'level': []
+        }
+
         return composites

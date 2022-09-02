@@ -4,7 +4,8 @@ from scripts.composite import Composite as Composite
 class Report:
       
     def get_composites(self, project, path):
-        file_name = 'output/{}/results/{}/subgraphs.json'.format(project,path)
+        # file_name = 'output/{}/results/{}/subgraphs.json'.format(project,path)
+        file_name = '../results/oracle/{}/results/{}/subgraphs.json'.format(project,path)
         subgraphs = []
         with open(file_name) as json_file:
             subgraphs = json.load(json_file)

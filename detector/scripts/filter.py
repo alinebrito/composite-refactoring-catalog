@@ -44,7 +44,8 @@ class RefactoringFilter:
         (not self.constructor(after, refactoring_levels))
 
     def filter_operations(self, project, refactoring_levels, operations, out_path):
-        refactorings = pd.read_csv('output/{}/results/refactorings.csv'.format(project), sep=';', keep_default_na=False)
+        # refactorings = pd.read_csv('output/{}/results/refactorings.csv'.format(project), sep=';', keep_default_na=False)
+        refactorings = pd.read_csv('../results/oracle/{}/results/refactorings.csv'.format(project), sep=';', keep_default_na=False)
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         with open(out_path, 'a+') as file:
             head = 'id;entityBeforeFullName;entityBeforeSimpleName;entityBeforeLocation;entityBeforeParameters;entityBeforeLine;entityBeforeParents;entityAfterFullName;entityAfterSimpleName;entityAfterLocation;entityAfterParameters;entityAfterLine;entityAfterParents;refactoringLevel;refactoringType;commitHash;abbreviatedCommitHash;authorName;authorEmail;authorDate;authorDateUnixTimestamp;committerName;committerEmail;committerDate;committerDateUnixTimestamp;idOracle;descriptionOracle\n'

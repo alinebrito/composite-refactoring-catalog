@@ -61,14 +61,15 @@ class Composition:
         pass
 
 
-    def pull_up_attribute(self, project):
-        path = 'output/{}/results/composition_pull_up_attribute'.format(project)
+    def pull_up_field(self, project):
+        # path = 'output/{}/results/composition_pull_up_field'.format(project)
+        path = '../results/oracle/{}/results/composition_pull_up_field'.format(project)
         file_name = '{}/selected_refactorings.csv'.format(path)
         refactorings = self.init(path, project, ['AttributeDeclaration'], ["PULL_UP"], file_name)
         for index, ref in enumerate(refactorings):
             ref['source'] = ref.get('entityBeforeFullName').replace(' ', '')
             ref['target'] = ref.get('entityAfterFullName').replace(' ', '')
-        self.plot(project, refactorings, path, 'Pull Up Attribute')
+        self.plot(project, refactorings, path, 'Pull Up Field')
     pass
 
 

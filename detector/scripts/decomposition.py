@@ -97,12 +97,13 @@ class Decomposition:
         self.plot(project, refactorings, path, 'Package Decomposition') 
         pass
 
-    def push_down_attribute(self, project):
-        path = 'output/{}/results/decomposition_push_down_attribute'.format(project)
+    def push_down_field(self, project):
+        # path = 'output/{}/results/decomposition_push_down_field'.format(project)
+        path = '../results/oracle/{}/results/decomposition_push_down_field'.format(project)
         file_name = '{}/selected_refactorings.csv'.format(path)
         refactorings = self.init(path, project, ['AttributeDeclaration'], ["PUSH_DOWN"], file_name)
         for index, ref in enumerate(refactorings):
             ref['source'] = ref.get('entityBeforeFullName').replace(' ', '')
             ref['target'] = ref.get('entityAfterFullName').replace(' ', '')
-        self.plot(project, refactorings, path, 'Push Down Attribute')
+        self.plot(project, refactorings, path, 'Push Down Field')
     pass
